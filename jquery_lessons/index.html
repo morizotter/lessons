@@ -9,24 +9,24 @@
 </head>
 <body>
 	<p>jQueryの練習</p>
-	<button>Add!</button>
+
+	<p>
+		<input type="text" name="name" id="name">
+		<input type="button" id="greet" value="Greet">
+	</p>
+
+	<div id="result"></div>
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script>
 		$(function() {
-
-			$('button').click(function() {
-				var p = $('<p>').text('vanish!').addClass('vanish');
-				$(this).before(p);
+			$('#greet').click(function() {
+				$.get('greet.php',{
+					name: $('#name').val()
+				}, function(data) {
+					$('#result').html(data.message + '(' + data.length + ')');
+				});
 			});
-
-		// $('.vanish').click(function() {
-		// 	var p = $('<p>').text('vanish!').addClass('vanish');
-		// 	$(this).remove();
-		// });
-		$('body').on('click','.vanish', function() {
-			$(this).remove();
 		});
-	});
-</script>
+	</script>
 </body>
 </html>
