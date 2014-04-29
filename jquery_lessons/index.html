@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="description">
+	<title>jQueryの練習</title>
+	<link rel="stylesheet" href="">
+	<link rel="shortcut icon" href="">
+</head>
+<body>
+	<p>jQueryの練習</p>
+	<button>Add!</button>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script>
+		$(function() {
+
+			$('button').click(function() {
+				var p = $('<p>').text('vanish!').addClass('vanish');
+				$(this).before(p);
+			});
+
+		// $('.vanish').click(function() {
+		// 	var p = $('<p>').text('vanish!').addClass('vanish');
+		// 	$(this).remove();
+		// });
+		$('body').on('click','.vanish', function() {
+			$(this).remove();
+		});
+	});
+</script>
+</body>
+</html>
