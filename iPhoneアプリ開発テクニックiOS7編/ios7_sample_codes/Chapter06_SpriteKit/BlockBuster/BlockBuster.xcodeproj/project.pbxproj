@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A1A26051858AC5900025870 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1A26041858AC5900025870 /* Player.m */; };
+		1A2C95C3185ADEBE00D3FFB0 /* Broken.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1A2C95C1185ADEBE00D3FFB0 /* Broken.sks */; };
+		1A2C95C4185ADEBE00D3FFB0 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A2C95C2185ADEBE00D3FFB0 /* spark.png */; };
+		1A2C961A185C317E00D3FFB0 /* EndScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2C9615185C317E00D3FFB0 /* EndScene.m */; };
+		1A2C961B185C317E00D3FFB0 /* PlayScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2C9617185C317E00D3FFB0 /* PlayScene.m */; };
+		1A2C961C185C317E00D3FFB0 /* TitleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2C9619185C317E00D3FFB0 /* TitleScene.m */; };
+		1A2C961F185C3DD800D3FFB0 /* SceneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2C961E185C3DD800D3FFB0 /* SceneController.m */; };
+		1A38E5071857FD75009C3FDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A38E5061857FD75009C3FDC /* Foundation.framework */; };
+		1A38E5091857FD75009C3FDC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A38E5081857FD75009C3FDC /* CoreGraphics.framework */; };
+		1A38E50B1857FD75009C3FDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A38E50A1857FD75009C3FDC /* UIKit.framework */; };
+		1A38E50D1857FD75009C3FDC /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A38E50C1857FD75009C3FDC /* SpriteKit.framework */; };
+		1A38E5131857FD75009C3FDC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A38E5111857FD75009C3FDC /* InfoPlist.strings */; };
+		1A38E5151857FD75009C3FDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A38E5141857FD75009C3FDC /* main.m */; };
+		1A38E5191857FD75009C3FDC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A38E5181857FD75009C3FDC /* AppDelegate.m */; };
+		1A38E51C1857FD75009C3FDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A38E51A1857FD75009C3FDC /* Main.storyboard */; };
+		1A38E51F1857FD75009C3FDC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A38E51E1857FD75009C3FDC /* ViewController.m */; };
+		1A38E5261857FD75009C3FDC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A38E5251857FD75009C3FDC /* Images.xcassets */; };
+		1A38ECD5185854E8009C3FDC /* Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A38ECD4185854E8009C3FDC /* Block.m */; };
+		1A38ECDA18586EDC009C3FDC /* BlockController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A38ECD918586EDC009C3FDC /* BlockController.m */; };
+		1AD586C91859445000F7B195 /* Ball.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD586C81859445000F7B195 /* Ball.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A1A26031858AC5900025870 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		1A1A26041858AC5900025870 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		1A2C95BF185ACC0600D3FFB0 /* OnHitProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnHitProtocol.h; sourceTree = "<group>"; };
+		1A2C95C1185ADEBE00D3FFB0 /* Broken.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Broken.sks; sourceTree = "<group>"; };
+		1A2C95C2185ADEBE00D3FFB0 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		1A2C9614185C317E00D3FFB0 /* EndScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EndScene.h; sourceTree = "<group>"; };
+		1A2C9615185C317E00D3FFB0 /* EndScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EndScene.m; sourceTree = "<group>"; };
+		1A2C9616185C317E00D3FFB0 /* PlayScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayScene.h; sourceTree = "<group>"; };
+		1A2C9617185C317E00D3FFB0 /* PlayScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayScene.m; sourceTree = "<group>"; };
+		1A2C9618185C317E00D3FFB0 /* TitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleScene.h; sourceTree = "<group>"; };
+		1A2C9619185C317E00D3FFB0 /* TitleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleScene.m; sourceTree = "<group>"; };
+		1A2C961D185C3DD800D3FFB0 /* SceneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneController.h; sourceTree = "<group>"; };
+		1A2C961E185C3DD800D3FFB0 /* SceneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneController.m; sourceTree = "<group>"; };
+		1A2C9621185C8C7900D3FFB0 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		1A38E5031857FD75009C3FDC /* BlockBuster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockBuster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A38E5061857FD75009C3FDC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1A38E5081857FD75009C3FDC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1A38E50A1857FD75009C3FDC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1A38E50C1857FD75009C3FDC /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		1A38E5101857FD75009C3FDC /* BlockBuster-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlockBuster-Info.plist"; sourceTree = "<group>"; };
+		1A38E5121857FD75009C3FDC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A38E5141857FD75009C3FDC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1A38E5161857FD75009C3FDC /* BlockBuster-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BlockBuster-Prefix.pch"; sourceTree = "<group>"; };
+		1A38E5171857FD75009C3FDC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1A38E5181857FD75009C3FDC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1A38E51B1857FD75009C3FDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1A38E51D1857FD75009C3FDC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1A38E51E1857FD75009C3FDC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1A38E5251857FD75009C3FDC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1A38E52C1857FD75009C3FDC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1A38E5341857FD75009C3FDC /* BlockBusterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlockBusterTests-Info.plist"; sourceTree = "<group>"; };
+		1A38E5361857FD75009C3FDC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A38E5381857FD75009C3FDC /* BlockBusterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockBusterTests.m; sourceTree = "<group>"; };
+		1A38ECD3185854E8009C3FDC /* Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Block.h; sourceTree = "<group>"; };
+		1A38ECD4185854E8009C3FDC /* Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Block.m; sourceTree = "<group>"; };
+		1A38ECD71858614B009C3FDC /* GameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
+		1A38ECD818586EDC009C3FDC /* BlockController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockController.h; sourceTree = "<group>"; };
+		1A38ECD918586EDC009C3FDC /* BlockController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockController.m; sourceTree = "<group>"; };
+		1AD586C71859445000F7B195 /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ball.h; sourceTree = "<group>"; };
+		1AD586C81859445000F7B195 /* Ball.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ball.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A38E5001857FD74009C3FDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A38E5091857FD75009C3FDC /* CoreGraphics.framework in Frameworks */,
+				1A38E50B1857FD75009C3FDC /* UIKit.framework in Frameworks */,
+				1A38E50D1857FD75009C3FDC /* SpriteKit.framework in Frameworks */,
+				1A38E5071857FD75009C3FDC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A2C95C0185ADE5E00D3FFB0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1A2C95C1185ADEBE00D3FFB0 /* Broken.sks */,
+				1A2C95C2185ADEBE00D3FFB0 /* spark.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1A2C9613185C317E00D3FFB0 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				1A2C961D185C3DD800D3FFB0 /* SceneController.h */,
+				1A2C961E185C3DD800D3FFB0 /* SceneController.m */,
+				1A2C9616185C317E00D3FFB0 /* PlayScene.h */,
+				1A2C9617185C317E00D3FFB0 /* PlayScene.m */,
+				1A2C9618185C317E00D3FFB0 /* TitleScene.h */,
+				1A2C9619185C317E00D3FFB0 /* TitleScene.m */,
+				1A2C9614185C317E00D3FFB0 /* EndScene.h */,
+				1A2C9615185C317E00D3FFB0 /* EndScene.m */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		1A38E4FA1857FD74009C3FDC = {
+			isa = PBXGroup;
+			children = (
+				1A2C9621185C8C7900D3FFB0 /* README.txt */,
+				1A38E50E1857FD75009C3FDC /* BlockBuster */,
+				1A38E5321857FD75009C3FDC /* BlockBusterTests */,
+				1A38E5051857FD75009C3FDC /* Frameworks */,
+				1A38E5041857FD75009C3FDC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A38E5041857FD75009C3FDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A38E5031857FD75009C3FDC /* BlockBuster.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A38E5051857FD75009C3FDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A38E5061857FD75009C3FDC /* Foundation.framework */,
+				1A38E5081857FD75009C3FDC /* CoreGraphics.framework */,
+				1A38E50A1857FD75009C3FDC /* UIKit.framework */,
+				1A38E50C1857FD75009C3FDC /* SpriteKit.framework */,
+				1A38E52C1857FD75009C3FDC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A38E50E1857FD75009C3FDC /* BlockBuster */ = {
+			isa = PBXGroup;
+			children = (
+				1A38ECD71858614B009C3FDC /* GameConfig.h */,
+				1A38E5171857FD75009C3FDC /* AppDelegate.h */,
+				1A38E5181857FD75009C3FDC /* AppDelegate.m */,
+				1A38E51D1857FD75009C3FDC /* ViewController.h */,
+				1A38E51E1857FD75009C3FDC /* ViewController.m */,
+				1A38E51A1857FD75009C3FDC /* Main.storyboard */,
+				1A38E5251857FD75009C3FDC /* Images.xcassets */,
+				1A2C9613185C317E00D3FFB0 /* Scenes */,
+				1A38ECD2185854A5009C3FDC /* Classes */,
+				1A2C95C0185ADE5E00D3FFB0 /* Resources */,
+				1A38E50F1857FD75009C3FDC /* Supporting Files */,
+			);
+			path = BlockBuster;
+			sourceTree = "<group>";
+		};
+		1A38E50F1857FD75009C3FDC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A38E5101857FD75009C3FDC /* BlockBuster-Info.plist */,
+				1A38E5111857FD75009C3FDC /* InfoPlist.strings */,
+				1A38E5141857FD75009C3FDC /* main.m */,
+				1A38E5161857FD75009C3FDC /* BlockBuster-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A38E5321857FD75009C3FDC /* BlockBusterTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A38E5381857FD75009C3FDC /* BlockBusterTests.m */,
+				1A38E5331857FD75009C3FDC /* Supporting Files */,
+			);
+			path = BlockBusterTests;
+			sourceTree = "<group>";
+		};
+		1A38E5331857FD75009C3FDC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A38E5341857FD75009C3FDC /* BlockBusterTests-Info.plist */,
+				1A38E5351857FD75009C3FDC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A38ECD2185854A5009C3FDC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1A2C95BF185ACC0600D3FFB0 /* OnHitProtocol.h */,
+				1A1A26031858AC5900025870 /* Player.h */,
+				1A1A26041858AC5900025870 /* Player.m */,
+				1A38ECD3185854E8009C3FDC /* Block.h */,
+				1A38ECD4185854E8009C3FDC /* Block.m */,
+				1A38ECD818586EDC009C3FDC /* BlockController.h */,
+				1A38ECD918586EDC009C3FDC /* BlockController.m */,
+				1AD586C71859445000F7B195 /* Ball.h */,
+				1AD586C81859445000F7B195 /* Ball.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A38E5021857FD74009C3FDC /* BlockBuster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A38E53C1857FD75009C3FDC /* Build configuration list for PBXNativeTarget "BlockBuster" */;
+			buildPhases = (
+				1A38E4FF1857FD74009C3FDC /* Sources */,
+				1A38E5001857FD74009C3FDC /* Frameworks */,
+				1A38E5011857FD74009C3FDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlockBuster;
+			productName = BlockBuster;
+			productReference = 1A38E5031857FD75009C3FDC /* BlockBuster.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A38E4FB1857FD74009C3FDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = yourcompany;
+				TargetAttributes = {
+					1A38E5021857FD74009C3FDC = {
+						SystemCapabilities = {
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 1A38E4FE1857FD74009C3FDC /* Build configuration list for PBXProject "BlockBuster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A38E4FA1857FD74009C3FDC;
+			productRefGroup = 1A38E5041857FD75009C3FDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A38E5021857FD74009C3FDC /* BlockBuster */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A38E5011857FD74009C3FDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A2C95C4185ADEBE00D3FFB0 /* spark.png in Resources */,
+				1A38E5131857FD75009C3FDC /* InfoPlist.strings in Resources */,
+				1A38E5261857FD75009C3FDC /* Images.xcassets in Resources */,
+				1A2C95C3185ADEBE00D3FFB0 /* Broken.sks in Resources */,
+				1A38E51C1857FD75009C3FDC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A38E4FF1857FD74009C3FDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A38E51F1857FD75009C3FDC /* ViewController.m in Sources */,
+				1A38E5191857FD75009C3FDC /* AppDelegate.m in Sources */,
+				1A2C961F185C3DD800D3FFB0 /* SceneController.m in Sources */,
+				1A2C961A185C317E00D3FFB0 /* EndScene.m in Sources */,
+				1A38ECDA18586EDC009C3FDC /* BlockController.m in Sources */,
+				1A2C961B185C317E00D3FFB0 /* PlayScene.m in Sources */,
+				1A2C961C185C317E00D3FFB0 /* TitleScene.m in Sources */,
+				1AD586C91859445000F7B195 /* Ball.m in Sources */,
+				1A38ECD5185854E8009C3FDC /* Block.m in Sources */,
+				1A1A26051858AC5900025870 /* Player.m in Sources */,
+				1A38E5151857FD75009C3FDC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1A38E5111857FD75009C3FDC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A38E5121857FD75009C3FDC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1A38E51A1857FD75009C3FDC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A38E51B1857FD75009C3FDC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1A38E5351857FD75009C3FDC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A38E5361857FD75009C3FDC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A38E53A1857FD75009C3FDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1A38E53B1857FD75009C3FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A38E53D1857FD75009C3FDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlockBuster/BlockBuster-Prefix.pch";
+				INFOPLIST_FILE = "BlockBuster/BlockBuster-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1A38E53E1857FD75009C3FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlockBuster/BlockBuster-Prefix.pch";
+				INFOPLIST_FILE = "BlockBuster/BlockBuster-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A38E4FE1857FD74009C3FDC /* Build configuration list for PBXProject "BlockBuster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A38E53A1857FD75009C3FDC /* Debug */,
+				1A38E53B1857FD75009C3FDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1A38E53C1857FD75009C3FDC /* Build configuration list for PBXNativeTarget "BlockBuster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A38E53D1857FD75009C3FDC /* Debug */,
+				1A38E53E1857FD75009C3FDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A38E4FB1857FD74009C3FDC /* Project object */;
+}

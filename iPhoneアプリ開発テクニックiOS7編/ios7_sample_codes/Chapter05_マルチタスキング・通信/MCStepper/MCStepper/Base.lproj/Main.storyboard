@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B40" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="LVB-YS-i5n">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="CtS-rA-C9T">
+            <objects>
+                <viewController id="LVB-YS-i5n" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hdm-LM-m4g"/>
+                        <viewControllerLayoutGuide type="bottom" id="nOE-5Y-NGu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bdc-N1-crn" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veC-dN-1Gb">
+                                <rect key="frame" x="20" y="518" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="connectAction:" destination="LVB-YS-i5n" eventType="touchUpInside" id="cO1-pW-LhQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vibrate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otJ-fL-srr">
+                                <rect key="frame" x="77" y="25" width="54" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zun-Qs-4ql">
+                                <rect key="frame" x="20" y="20" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Peer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FtH-Yq-CgR">
+                                <rect key="frame" x="50" y="519" width="72" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zun-Qs-4ql" firstAttribute="top" secondItem="Hdm-LM-m4g" secondAttribute="bottom" constant="20" id="7pg-gQ-PZU"/>
+                            <constraint firstItem="otJ-fL-srr" firstAttribute="leading" secondItem="Zun-Qs-4ql" secondAttribute="trailing" constant="8" symbolic="YES" id="LTp-l5-Md2"/>
+                            <constraint firstItem="nOE-5Y-NGu" firstAttribute="top" secondItem="veC-dN-1Gb" secondAttribute="bottom" constant="28" id="Oxo-UX-VEC"/>
+                            <constraint firstItem="FtH-Yq-CgR" firstAttribute="bottom" secondItem="veC-dN-1Gb" secondAttribute="bottom" id="VY3-Eo-MQy"/>
+                            <constraint firstItem="otJ-fL-srr" firstAttribute="centerY" secondItem="Zun-Qs-4ql" secondAttribute="centerY" id="ZRf-bQ-ilf"/>
+                            <constraint firstItem="veC-dN-1Gb" firstAttribute="leading" secondItem="bdc-N1-crn" secondAttribute="leading" constant="20" id="b9Q-Yg-Xi8"/>
+                            <constraint firstItem="FtH-Yq-CgR" firstAttribute="leading" secondItem="veC-dN-1Gb" secondAttribute="trailing" constant="8" symbolic="YES" id="dDC-FR-kYN"/>
+                            <constraint firstItem="Zun-Qs-4ql" firstAttribute="leading" secondItem="bdc-N1-crn" secondAttribute="leading" constant="20" id="mXK-Ql-ziB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="vibrateSW" destination="Zun-Qs-4ql" id="BXE-AI-Ro5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btX-cZ-eVz" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <nil key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

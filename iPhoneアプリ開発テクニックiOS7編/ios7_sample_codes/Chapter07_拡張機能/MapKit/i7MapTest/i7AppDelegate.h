@@ -1,0 +1,16 @@
+//
+//  i7AppDelegate.h
+//  i7MapTest
+//
+//  インプレスジャパン発行
+//  「上を目指すプログラマーのためのiPhoneアプリ開発テクニック iOS 7編」
+//  サンプルコード
+//
+
+#import <UIKit/UIKit.h>
+
+@interface i7AppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
+
+@end
