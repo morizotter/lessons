@@ -1,0 +1,11 @@
+{	
+	"httpd": {
+		"port": 80
+	},
+	"owner": {
+		"name": "Gen Taguch"
+	},
+	"run_list":[
+		"recipe[hello]"
+	]
+}
